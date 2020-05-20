@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+    <script>
+        function menuFunction() {
+            var menu = document.querySelector(".options");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+    <body>
+        <nav>
+            <h1 class="about">
+                <a href="index.html">About</a>
+            </h1>
+            <button class="menu" onclick="menuFunction()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </nav>
+        <div class="options">
+            <h1>
+                <a href="index.html">Contact</a>
+            </h1>
+        </div>
+        <section id="carea">
+            <h1>Contact Me</h1>
+            <address>Email: rafaelngoncalves5@outlook.com</address>
+            <address>Name: Rafael N</address>
+            <address>Age: 18</address>
+            <address>Phone: +55 (31)98842-9862</address>
+            <p>Looking for: Simple front-end projects where I can collaborate as much as possible, 
+            while honing my HTML, CSS and JavaScript skills.</p>
+    </section>
+    </body>
+    <footer>
+        <p>Copyright Rafael N 2020</p>
+    </footer>
+</head>
+</html>
