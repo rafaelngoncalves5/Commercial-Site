@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+    <script>
+        function showTooltip() {
+            var tip = document.querySelector("figcaption");
+            tip.style.visibility = "visible";
+        }
+        function hideTooltip() {
+            var tip = document.querySelector("figcaption");
+            tip.style.visibility = "hidden";
+        }
+        function menuFunction() {
+            var menu = document.querySelector(".options");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+
+        </script>
+    <body>
+        <nav>
+            <h1 class="contact">
+                <a href="contact.html">Contact</a>
+            </h1>
+            <button class="menu" onclick="menuFunction()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </nav>
+        <div class="options">
+            <h1>
+                <a href="contact.html">About</a>
+            </h1>
+        </div>
+        <section class="description">
+            <article>
+                <h2>Introduction</h2>
+                <p>Ut eget sapien vel ipsum blandit blandit. Aliquam rutrum posuere sodales. Vestibulum eu vestibulum est, nec aliquam nunc. Ut imperdiet egestas mattis. Phasellus congue quis urna ut interdum. Pellentesque maximus auctor nisl. Nam vitae urna quis nisi porttitor elementum. 
+                    Fusce dapibus urna non suscipit feugiat. Suspendisse non maximus tellus.
+                </p>
+                <h3>Knowledge area</h3>
+                <p>Vivamus ultrices sem id felis tempus, ut luctus mauris suscipit. Ut iaculis molestie tortor, ac pulvinar mauris porta ut. 
+                    Praesent felis eros, tempus ac leo quis, condimentum pretium neque.
+                </p>
+                <figure>
+                    <img src="Images/hcj.jpg" alt="skillsbanner" onmouseover="showTooltip()"; onmouseout="hideTooltip()">
+                <figcaption>
+                    Maecenas fermentum, urna in convallis euismod, nisl nisl cursus mauris, vitae rhoncus erat arcu aliquam odio. Sed vel accumsan libero.
+                </figcaption>
+            </figure>
+            </article>
+            <aside>
+                <h4>Contact me</h4>
+                <p>Fusce vulputate justo quis pretium elementum. Maecenas pulvinar sit amet eros et feugiat. Donec id lectus <a href=contact.html>Click Here!</a></p>
+            </aside>    
+        </section>
+        <footer>
+            <p>Copyright Rafael N 2020</p>
+        </footer>
+    </body>
+</head>
+</html>
